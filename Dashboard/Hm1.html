@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./Hm1.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../images/logo used in header.png" />
+      </div>
+      <ul>
+        <div class="dashboardoption">
+          <li class="item1">
+            <a
+              href="https://www.w3schools.com/cssref/sel_active.php"
+              target="_blank"
+              >Dashboard</a
+            >
+          </li>
+          <div class="dashboardcontent">
+            <div class="content1">
+              <li class="item1"><a href="">Content</a></li>
+              <img src="../images/arrow-down.png" alt="" class="ig" />
+            </div>
+            <li class="coursecatalog"><a href="">Course Catalog</a></li>
+          </div>
+          <div class="dashboarddetails">
+            <li class="item1"><a href="">Users</a></li>
+            <img src="../images/arrow-down.png" alt="" class="ig" />
+          </div>
+          <div class="dashboarddetails">
+            <li class="item1"><a href="">Reports</a></li>
+            <img src="../images/arrow-down.png" alt="" class="ig" />
+          </div>
+          <div class="dashboarddetails">
+            <li class="item1"><a href="">Admin</a></li>
+            <img src="../images/arrow-down.png" alt="" class="ig" />
+          </div>
+        </div>
+        <li class="item3" onmouseover="alertFunction()" onmouseout="alertClose()" >
+          <a href="javascript:void(0);" 
+            ><img src="../images/alerts.png" />
+            <div class="num" id="alertnum">2</div>
+          </a>
+        </li>
+        <div class="mainalert" onmouseover="alertFunction()" onmouseout="alertClose()" >
+          <div class="alert">
+            <!-- <div class="alertdata">
+                    <div class="alertflex">
+                        <div class="alertcontent">License for Introduction to Algebra has been assigned to your school
+                        </div>
+                        <img src="../images/correct.png" alt="" class="alertimage">
+                    </div>
+                    <div class="alertcourse"><span>Course: </span>Advanced Mathematics</div>
+                    <div class="alertdate">15-Sep-2018 at 07:21 pm</div>
+                </div> -->
+          </div>
+          <div class="alertbutton">SHOW ALL</div>
+        </div>
+
+        <li class="item3" onmouseover="announcementsFunction()" onmouseout="announcementsClose()">
+          <a href="javascript:void(0);" 
+            ><img src="../images/announcements.png" />
+            <div class="num" id="announcementsnum">1</div>
+          </a>
+        </li>
+
+        <div class="mainannouncement" onmouseover="announcementsFunction()" onmouseout="announcementsClose()">
+          <div class="announcement">
+            <!-- <div class="announcementdata">
+              <div class="announcementflex">
+                <div class="announcementname">
+                  <span>PA:</span>&nbsp;Jil Patel
+                </div>
+                <img
+                  src="../images/correct.png"
+                  alt=""
+                  class="announcementimage"
+                />
+              </div>
+              <div class="announcementcontent">jerry is rat</div>
+              <div class="announcementcourse">Course: Advanced Mathematics</div>
+              <div class="filedate">
+                <div class="file">
+                   <img src="../images/fileAttach.png" alt=""> &nbsp;2 files attached
+                </div>
+                <div class="announcementdate">15-Sep-2018 at 07:21 pm</div>
+              </div>
+            </div> -->
+          </div>
+          <div class="button">
+            <div class="showallbutton">SHOW ALL</div>
+            <div class="createnewbutton">CREATE NEW</div>
+          </div>
+        </div>
+
+        <li class="item3" id="profile">
+          <a href=""
+            ><img
+              style="border-radius: 50%; height: 1.5rem; width: 1.5rem"
+              src="https://img.freepik.com/free-photo/headshot-beautiful-dark-skinned-curly-has-pleased-expression-rejoices-success-enjoys-spare-time-wears-casual-t-shirt-isolated-yellow-wall-people-positive-emotions-feelings-concept_273609-27729.jpg"
+            />
+            <div id="num1">T</div>
+          </a>
+        </li>
+        <li class="item2">
+          <a href="javascript:void(0);" class="hamburgermenu"
+            ><img src="../images/hamburger-menu (1) (1).png"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="option">
+      <div class="item">
+        <a href=""
+          ><img src="../images/courses.png" />
+          <p><span>4 </span>Courses</p>
+        </a>
+      </div>
+      <div class="item">
+        <a href=""
+          ><img src="../images/classes.png" />
+          <p><span>4 </span>Classes</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="search">
+      <div>Showing 4 of 4 courses</div>
+      <div class="rightsearch">
+        <div>Sort By:</div>
+        <div class="coursedetails">
+          <div>Course Name</div>
+          <img src="../images/arrow-down.png" />
+        </div>
+      </div>
+      <img src="../images/sort.png" />
+    </div>
+
+    <div class="cards">
+      <!-- <div class="cardmain1">
+            <div class="card1">
+                <img src="../images/imageMask-1.png">
+                <div class="carddetails">
+                    <div class="bigtext" id="fav">
+                        <div>Acceleration</div>
+                        <img src="../images/favourite.png">
+                    </div>
+                    <div class="smalltext">Physics | Grade 7<span
+                            style="padding-left: 0.2rem; color: #1F7A54;">+2</span></div>
+                    <div class="smalltext"><span>4</span> Units <span style="padding-left: 0.2rem;">18</span> Lessons
+                        <span style="padding-left: 0.2rem;">24</span> Topics</div>
+                    <div class="bigtext" id="classdet">
+                        <div>Mr.Frank's Class B</div>
+                        <img src="../images/arrow-down.png">
+                    </div>
+                    <div class="smalltext">50 Students | 21-Jan-2020 - 21-Aug-2020</div>
+                </div>
+            </div>
+            <div class="symbol">
+                <div><img src="../images/preview.png"></div>
+                <div><img src="../images/manage course.png"></div>
+                <div><img src="../images/grade submissions.png"></div>
+                <div><img src="../images/reports.png"></div>
+            </div>
+        </div>
+
+        <div class="cardmain2">
+            <div class="card1">
+                <img src="../images/imageMask-2.png">
+                <div class="carddetails">
+                    <div class="bigtext" id="fav">
+                        <div>Displacement, Velocity and Speed</div>
+                        <img src="../images/favourite.png">
+                    </div>
+                    <div class="smalltext">Physics 2 | Grade 6<span
+                            style="padding-left: 0.2rem; color: #1F7A54;">+3</span></div>
+                    <div class="smalltext"><span>2</span> Units <span style="padding-left: 0.2rem;">15</span> Lessons
+                        <span style="padding-left: 0.2rem;">20</span> Topics</div>
+                    <div class="bigtext" id="classdet">
+                        <div style="color: black; opacity: 40%;">No Classes</div>
+                        <img src="../images/arrow-down.png">
+                    </div>
+                </div>
+            </div>
+            <div class="symbol">
+                <div><img src="../images/preview.png"></div>
+                <div><img src="../images/manage course.png" style="opacity: 40%;"></div>
+                <div><img src="../images/grade submissions.png" style="opacity: 40%;"></div>
+                <div><img src="../images/reports.png"></div>
+            </div>
+        </div>
+
+        <div class="cardmain3">
+            <div class="card1">
+                <img src="../images/imageMask.png">
+                <div class="carddetails">
+                    <div class="bigtext" id="fav">
+                        <div>Introduction to Biology: Micropragnisms and how they affect..</div>
+                        <img src="../images/favourite.png">
+                    </div>
+                    <div class="smalltext">Biology | Grade 4<span
+                            style="padding-left: 0.2rem; color: #1F7A54;">+1</span></div>
+                    <div class="smalltext"><span>5</span> Units <span style="padding-left: 0.2rem;">16</span> Lessons
+                        <span style="padding-left: 0.2rem;">22</span> Topics</div>
+                    <div class="bigtext" id="classdet">
+                        <div>All Classes</div>
+                        <img src="../images/arrow-down.png">
+                    </div>
+                    <div class="smalltext">300 Students</div>
+                </div>
+            </div>
+            <div class="symbol">
+                <div><img src="../images/preview.png"></div>
+                <div><img src="../images/manage course.png" style="opacity: 40%;"></div>
+                <div><img src="../images/grade submissions.png" style="opacity: 40%;"></div>
+                <div><img src="../images/reports.png"></div>
+            </div>
+        </div>
+
+        <div class="cardmain4">
+            <div id="expired">EXPIRED</div>
+            <div class="card1">
+                <img src="../images/imageMask-3.png">
+                <div class="carddetails">
+                    <div class="bigtext" id="fav">
+                        <div>Introduction to High School Mathematics</div>
+                        <img src="../images/favourite.png">
+                    </div>
+                    <div class="smalltext">Mathematics | Grade 8<span
+                            style="padding-left: 0.2rem; color: #1F7A54;">+3</span></div>
+                    <div class="bigtext" id="classdet">
+                        <div>Mr.Frank's Class A</div>
+                        <img src="../images/arrow-down.png">
+                    </div>
+                    <div class="smalltext">44 Students | 14-Oct-2019 - 20-Oct-2020</div>
+                </div>
+            </div>
+            <div class="symbol">
+                <div><img src="../images/preview.png"></div>
+                <div><img src="../images/manage course.png"></div>
+                <div><img src="../images/grade submissions.png"></div>
+                <div><img src="../images/reports.png"></div>
+            </div>
+        </div> -->
+    </div>
+
+    <footer>
+      <div class="contact">
+        About<span style="color: #616161"> | </span>Contact Us
+      </div>
+      <div class="footerdetails">
+        <img src="../images/Navlogo.png" />
+        <span>|</span>
+        <p claas="p1">Copyright © 2020-2021</p>
+        <p><span>Zeus System Pvt.Ltd</span></p>
+        <p class="p1">All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <script>var exports = {};</script>
+    <script  type="module" src="./Ts/Hm.js"></script>
+    <script>
+
+
+      function alertFunction() {
+        const x = document.querySelector("#alertnum");
+        const y = document.querySelector(".mainalert");
+        const z = document.querySelector(".alertbutton");
+        const y1 = document.querySelector(".mainannouncement");
+        const z1 = document.querySelector(".mainannouncement .button");
+        const x1 = document.querySelector("#announcementsnum");
+
+        
+          x.style.visibility = "hidden";
+          y.classList.add("open2");
+          z.classList.add("btn1");
+          y1.classList.remove("open");
+          z1.classList.remove("btn");
+          x1.style.visibility="visible";
+      }
+
+      function alertClose(){
+        const x = document.querySelector("#alertnum");
+        const y = document.querySelector(".mainalert");
+        const z = document.querySelector(".alertbutton");
+
+          x.style.visibility = "visible";
+          y.classList.remove("open2");
+          z.classList.remove("btn1");
+      }
+
+
+
+      function announcementsFunction() {
+        const x = document.querySelector("#alertnum");
+        const y = document.querySelector(".mainalert");
+        const z = document.querySelector(".alertbutton");
+        const y1 = document.querySelector(".mainannouncement");
+        const z1 = document.querySelector(".mainannouncement .button");
+        const x1 = document.querySelector("#announcementsnum");
+
+        
+          x1.style.visibility = "hidden";
+          y1.classList.add("open");
+          z1.classList.add("btn");
+          y.classList.remove("open2");
+          z.classList.remove("btn2");
+          x.style.visibility="visible";
+      }
+
+      function announcementsClose(){
+        const x = document.querySelector("#announcementsnum");
+        const y = document.querySelector(".mainannouncement");
+        const z = document.querySelector(".mainannouncement .button");
+
+          x.style.visibility = "visible";
+          y.classList.remove("open");
+          z.classList.remove("btn");
+      }
+      
+    </script>
+  </body>
+</html>
