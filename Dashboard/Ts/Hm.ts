@@ -1,4 +1,5 @@
-import {c} from "./interface"
+import { p,c } from "./interface"
+
 
 const cards = document.querySelector(".cards") as HTMLElement;
 const alerts = document.querySelector(".alert") as HTMLElement;
@@ -14,7 +15,7 @@ async function jsonCardFile() {
     console.log("can't get card json File");
   }
 }
-const res1:Promise<any> = jsonCardFile();
+const res1:Promise<p> = jsonCardFile();
 
 async function jsonAlertFile() {
   try {

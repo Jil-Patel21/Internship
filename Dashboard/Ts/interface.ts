@@ -1,4 +1,4 @@
-export type c = {
+type c = {
     cardimage: string,
     heading: string,
     favimage: string,
@@ -17,12 +17,12 @@ export type c = {
     manageimage: string,
     gradeimage: string,
     reportimage: string,
-}[];
+};
 
-export type al={
-
+type p = {
+    Carddetails: c[];
 }
 
-export type an = {
-    
-} 
+export { p, c };
+
+
